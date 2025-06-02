@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.custom-navbar {
+    background-color: #f8f9fa;
+    padding: 20px 30px;
+    border-bottom: 1px solid #ddd;
+  }
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .navbar-links ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .navbar-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+  }
+  /* Responsive */
+  @media (max-width: 768px) {
+    .toggle-button {
+      display: block;
+    }
+
+    .navbar-links {
+      width: 100%;
+      display: none;
+    }
+
+    .navbar-links.active {
+      display: block;
+    }
+
+    .navbar-links ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  }
+  /* Card_creation*/
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 16px; /* spacing between cards */
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-right:10px;
+  }
+  .card:hover{
+    transform: scale(1.1);
+    transition: 2s;
+  }
+  .card img {
+    width: 100%;
+    height: 200px;   /* fixed height */
+    object-fit: cover; 
+  }
+  .card-title {
+    font-size: 1.2rem;
+    margin: 0 0 8px 0;
+  }
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  footer{
+    width: 100%;
+    padding: 20px;
+    background-color:black;
+    color: white;
+    justify-items: center;
+    justify-content: space-around;
+  }
+  .footer-contanier{
+    display: flex;
+    align-items: center;
+
+  }
+  .footer-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer-nav ul{
+    list-style: none;
+    display: flex;
+    gap: 200px;
+    padding-left: 0;
+    margin: 0;
+  }
+  .footer-nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  .footer-nav ul li a:hover{
+    color: gold;
+  }
+  .footer-nav ul li a:active{
+    color: red;
+  }
+  #footer_p{
+    margin-top: 20px;
+    color: white;
+  }
+
+  /*For AboutUs Page*/
+  .aboutus-class{
+    margin: 50px 70px;
+  }
+
+  /*For OurPolicy Page*/
+  .ourpolicy-class{
+    margin: 50px 70px;
+  }
+  .ourpolicy-p{
+    margin-left: 50px;
+  }
+  /*For Explanation of Each Card  Page*/
+.type1-card {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 1000px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 40px 110px;
+}
+.type1-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  
+}
+.type1-card-content {
+  padding: 16px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.type1-card-content h5 {
+  margin: 10px 10px;
+  font-size: 2.6rem;
+}
+.type1-card-content p {
+  flex-grow: 1;
+  margin-bottom: 12px;
+  color: #555;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.properties {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  margin-left: 10px;
+}
+.property-box {
+  background-color: #eee;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #333;
+}
+.price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  margin-left: 10px;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.quantity button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #007bff;
+  background: white;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quantity input {
+  width: 40px;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 30px;
+}
+.button-add {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.button-add:hover {
+  background-color: #0056b3;
+}
